@@ -11,15 +11,15 @@
 
         <nav class="site-navigation">
           <ul class="navigation-list">
-            <li class="navigation-list__item">главная</li>
-            <li class="navigation-list__item">фото и видео</li>
-            <li class="navigation-list__item">форма отзыва</li>
-            <li class="navigation-list__item">html academy</li>
+            <li class="navigation-list__item"><a href="index.html">главная</a></li>
+            <li class="navigation-list__item"><a href="photo.html">фото и видео</a></li>
+            <li class="navigation-list__item"><a href="form.html">форма отзыва</a></li>
+            <li class="navigation-list__item"><a href="https://htmlacademy.ru">html academy</a></li>
           </ul>
         </nav>
 
         <div class="site-header__logo">
-          <a class="site-header__logo--hyperlink" href="/index.html"><img class="site-header__logo--image" src="#" alt="sedona-logo" width="102" height="83"></a>
+          <a class="site-header__logo--hyperlink" href="index.html"><img class="site-header__logo--image" src="#" alt="sedona-logo" width="102" height="83"></a>
         </div>
 
         <button class="site-header__burger"></button>
@@ -41,6 +41,8 @@
 
         <section class="feedback">
           <form class="feedback__form" action="https://echo.htmlacademy.ru" method="get">
+
+            <fieldset class="feedback__group">
             <h3 class="feedback__header">представьтесь:</h3>
 
             <label class="feedback__label feedback__label--name" for="name">имя*:</label>
@@ -51,7 +53,9 @@
 
             <label class="feedback__label feedback__label--last-name" for="patronymic">отчество</label>
             <input class="feedback__input feedback__input--last-name" id="patronymic" type="text" placeholder="Александрович">
+          </fieldset>
 
+          <fieldset class="feedback__group">
             <h3 class="feedback__header">контактная информация:</h3>
 
             <label class="feedback__label feedback__label--phone" for="phone">контактный телефон*:</label>
@@ -59,20 +63,23 @@
 
             <label class="feedback__label feedback__label--phone" for="email">Введите e-mail</label>
             <input class="feedback__input feedback__label--phone" id="email" type="email" placeholder="Введите e-mail" required>
+          </fieldset>
 
             <!-- иконки трубки и телефона планирую сделать псевдоэлементами, по-этому в разметке их нету -->
-
+          <fieldset class="feedback__group">
             <h3 class="feedback__header">ваше общее впечатление</h3>
 
             <label class="feedback__label feedback__label--radio" for="positive">Скорее положительное</label>
-            <input class="feedback__input feedback__input--radio" id="positive" type="radio" checked>
+            <input class="feedback__input feedback__input--radio" id="positive" type="radio" checked >
 
             <label class="feedback__label feedback__label--radio" for="negative">Скорее отрицательное</label>
             <input class="feedback__input feedback__input--radio" id="negative" type="radio">
 
             <label class="feedback__label feedback__label--radio" for="neutral">Затрудняюсь ответить</label>
             <input class="feedback__input feedback__input--radio" id="neutral" type="radio">
+          </fieldset>
 
+          <fieldset class="feedback__group">
             <h3 class="feedback__header">Посещённые достопримечательности:</h3>
 
             <label class="feedback__label feedback__label--checkbox" for="option1">Мост Дьявола</label>
@@ -86,10 +93,13 @@
 
             <label class="feedback__label feedback__label--checkbox" for="option4">Красные скалы</label>
             <input class="feedback__input feedback__input--checkbox" id="option4" type="checkbox">
+          </fieldset>
 
+          <fieldset class="feedback__group">
             <h3 class="feedback__header">Опишите свои эмоции</h3>
 
             <textarea class="feedback__area" required>Опишите подробно все свои восторги</textarea>
+          </fieldset>
 
             <button class="feedback__button" type="submit">отправить отзыв</button>
 

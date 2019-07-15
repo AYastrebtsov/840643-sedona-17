@@ -11,15 +11,15 @@
 
         <nav class="site-navigation">
           <ul class="navigation-list">
-            <li class="navigation-list__item">главная</li>
-            <li class="navigation-list__item">фото и видео</li>
-            <li class="navigation-list__item">форма отзыва</li>
-            <li class="navigation-list__item">html academy</li>
+            <li class="navigation-list__item"><a href="index.html">главная</a></li>
+            <li class="navigation-list__item"><a href="photo.html">фото и видео</a></li>
+            <li class="navigation-list__item"><a href="form.html">форма отзыва</a></li>
+            <li class="navigation-list__item"><a href="https://htmlacademy.ru">html academy</a></li>
           </ul>
         </nav>
 
         <div class="site-header__logo">
-          <a class="site-header__logo--hyperlink" href="/index.html"><img class="site-header__logo--image" src="#" alt="sedona-logo" width="102" height="83"></a>
+          <a class="site-header__logo--hyperlink" href="index.html"><img class="site-header__logo--image" src="#" alt="sedona-logo" width="102" height="83"></a>
         </div>
 
         <button class="site-header__burger"></button>
@@ -39,53 +39,48 @@
           <p class="slogan__reasons">не можете решиться на путешествие из-за курса? фотографии помогутвам забыть о политикеи экономике</p>
         </section>
 
-        <section class="gallery">
+      <ul class="gallery">
+
+        <li class="gallery__item">
           <div class="gallery__image">
-            <img class="gallery__image--picture" src="#" alt="sedoan-road" width="280" height="280">
+            <img class="gallery__picture" src="#" alt="sedoan-road" width="280" height="280">
           </div>
           <p class="gallery__description">неродные просторы</p>
           <p class="gallery__author">Автор фото: Борис</p>
-          <div class="gallery__like">
-            <img class="gallery__like--picture" src="#" alt="like" width="20" height="20">
-          </div>
-          <span class="gallery counter">1350</span>
-        </section>
+          <button class="gallery__like"><span class="visually-hidden">нравится</span></button>
+          <span class="gallery__counter">1350</span>
+        </li>
 
-        <section class="gallery">
+        <li class="gallery__item">
           <div class="gallery__image">
-            <img class="gallery__image--picture" src="#" alt="sedoan-vegetation" width="280" height="280">
+            <img class="gallery__picture" src="#" alt="sedoan-vegetation" width="280" height="280">
           </div>
           <p class="gallery__description">местная растительность</p>
           <p class="gallery__author">Автор фото: Сергей</p>
-          <div class="gallery__like">
-            <img class="gallery__like--picture" src="#" alt="like" width="20" height="20">
-          </div>
-          <span class="gallery counter">143</span>
-        </section>
+          <button class="gallery__like"><span class="visually-hidden">нравится</span></button>
+          <span class="gallery__counter">143</span>
+        </li>
 
-        <section class="gallery">
+        <li class="gallery__item">
           <div class="gallery__image">
-            <img class="gallery__image--picture" src="#" alt="road-to-the-north" width="280" height="280">
+            <img class="gallery__picture" src="#" alt="road-to-the-north" width="280" height="280">
           </div>
           <p class="gallery__description">дорога на север</p>
           <p class="gallery__author">Автор фото: Пётр</p>
-          <div class="gallery__like">
-            <img class="gallery__like--picture" src="#" alt="like" width="20" height="20">
-          </div>
-          <span class="gallery counter">96</span>
-        </section>
+          <button class="gallery__like"><span class="visually-hidden">нравится</span></button>
+          <span class="gallery__counter">96</span>
+        </li>
 
-        <section class="gallery">
+        <li class="gallery__item">
           <div class="gallery__image">
-            <img class="gallery__image--picture" src="#" alt="sedona-bridge" width="280" height="280">
+            <img class="gallery__picture" src="#" alt="sedona-bridge" width="280" height="280">
           </div>
           <p class="gallery__description">мост дьявола</p>
           <p class="gallery__author">Автор фото: Антон</p>
-          <div class="gallery__like">
-            <img class="gallery__like--picture" src="#" alt="like" width="20" height="20">
-          </div>
-          <span class="gallery counter">254</span>
-        </section>
+          <button class="gallery__like"><span class="visually-hidden">нравится</span></button>
+          <span class="gallery__counter">254</span>
+        </li>
+      </ul>
 
         <section class="slogan">
           <h2 class="slogan__header">всё ещё сомневаетесь?</h2>
@@ -93,7 +88,13 @@
         </section>
 
         <section class="video-box">
-          <video class="video-box__video" src="#" controls width="320" height="200"></video>
+          <div class="video-box__duration-line"><span class="visually-hidden">управление перемоткой</span></div>
+          <div class="video-box__controls"><span class="visually-hidden">органы управления видеоплеером</span>
+            <div class="video-box__rewind"><span class="visually-hidden">начать просмотр сначала</span></div>
+            <div class="video-box__subtitles"><span class="visually-hidden">субтитры</span></div>
+            <div class="video-box__full-screen"><span class="visually-hidden">полноэкранный режим</span></div>
+          </div>
+
         </section>
 
       </main>
