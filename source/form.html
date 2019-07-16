@@ -13,7 +13,7 @@
           <ul class="navigation-list">
             <li class="navigation-list__item"><a href="index.html">главная</a></li>
             <li class="navigation-list__item"><a href="photo.html">фото и видео</a></li>
-            <li class="navigation-list__item"><a href="form.html">форма отзыва</a></li>
+            <li class="navigation-list__item"><a>форма отзыва</a></li>
             <li class="navigation-list__item"><a href="https://htmlacademy.ru">html academy</a></li>
           </ul>
         </nav>
@@ -22,7 +22,7 @@
           <a class="site-header__logo--hyperlink" href="index.html"><img class="site-header__logo--image" src="#" alt="sedona-logo" width="102" height="83"></a>
         </div>
 
-        <button class="site-header__burger"></button>
+        <button class="site-header__burger"><span class="visually-hidden">меню</span></button>
 
       </header>
 
@@ -69,14 +69,15 @@
           <fieldset class="feedback__group">
             <h3 class="feedback__header">ваше общее впечатление</h3>
 
-            <label class="feedback__label feedback__label--radio" for="positive">Скорее положительное</label>
             <input class="feedback__input feedback__input--radio" name="feedback-radio" value="positive" id="positive" type="radio" checked >
+            <label class="feedback__label feedback__label--radio" for="positive">Скорее положительное</label>
 
-            <label class="feedback__label feedback__label--radio" for="negative">Скорее отрицательное</label>
             <input class="feedback__input feedback__input--radio" name="feedback-radio" value="negative" id="negative" type="radio">
+            <label class="feedback__label feedback__label--radio" for="negative">Скорее отрицательное</label>
 
-            <label class="feedback__label feedback__label--radio" for="neutral">Затрудняюсь ответить</label>
             <input class="feedback__input feedback__input--radio" name="feedback-radio" value="neutral" id="neutral" type="radio">
+            <label class="feedback__label feedback__label--radio" for="neutral">Затрудняюсь ответить</label>
+
           </fieldset>
 
           <fieldset class="feedback__group">
@@ -108,26 +109,26 @@
 
       </main>
 
-      <footer class="site-footer">
+        <footer class="site-footer">
             <p class="site-footer__hashtag">#visitsedona</p>
 
             <section class="social">
               <ul class="social__list">
                 <li class="social__item">
-                  <a href="#"><span class="visually-hidden">Twitter</span><img class="social__icon social__icon--twitter" src="#" alt="twitter" width="20" height="20"></a>
+                  <a href="#"><span class="visually-hidden">Twitter</span></a>
                 </li>
                 <li class="social__item">
-                  <a href="#"><span class="visually-hidden">Twitter</span><img class="social__icon social__icon--facebook" src="#" alt="facebook" width="20" height="20"></a>
+                  <a href="#"><span class="visually-hidden">Twitter</span></a>
                 </li>
                 <li class="social__item">
-                  <a href="#"><span class="visually-hidden">Twitter</span><img class="social__icon social__icon--youtube" src="#" alt="youtube" width="20" height="20"></a>
+                  <a href="#"><span class="visually-hidden">Twitter</span></a>
                 </li>
               </ul>
             </section>
 
             <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="blank">разработано <img class="copyright__icon" src="#" alt="html-academy-logo" width="20" height="20">
             </a>
-      </footer>
+        </footer>
 
     </body>
 

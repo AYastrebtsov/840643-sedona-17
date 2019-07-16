@@ -12,7 +12,7 @@
         <nav class="site-navigation">
           <ul class="navigation-list">
             <li class="navigation-list__item"><a href="index.html">главная</a></li>
-            <li class="navigation-list__item"><a href="photo.html">фото и видео</a></li>
+            <li class="navigation-list__item"><a>фото и видео</a></li>
             <li class="navigation-list__item"><a href="form.html">форма отзыва</a></li>
             <li class="navigation-list__item"><a href="https://htmlacademy.ru">html academy</a></li>
           </ul>
@@ -22,7 +22,7 @@
           <a class="site-header__logo--hyperlink" href="index.html"><img class="site-header__logo--image" src="#" alt="sedona-logo" width="102" height="83"></a>
         </div>
 
-        <button class="site-header__burger"></button>
+        <button class="site-header__burger"><span class="visually-hidden">меню</span></button>
 
       </header>
 
@@ -43,7 +43,7 @@
 
         <li class="gallery__item">
           <div class="gallery__image">
-            <img class="gallery__picture" src="#" alt="sedoan-road" width="280" height="280">
+            <a class="gallery_big-link" href="#"><img class="gallery__picture" src="#" alt="sedoan-road" width="280" height="280"></a>
           </div>
           <p class="gallery__description">неродные просторы</p>
           <p class="gallery__author">Автор фото: Борис</p>
@@ -53,7 +53,7 @@
 
         <li class="gallery__item">
           <div class="gallery__image">
-            <img class="gallery__picture" src="#" alt="sedoan-vegetation" width="280" height="280">
+            <a class="gallery_big-link" href="#"><img class="gallery__picture" src="#" alt="sedoan-vegetation" width="280" height="280"></a>
           </div>
           <p class="gallery__description">местная растительность</p>
           <p class="gallery__author">Автор фото: Сергей</p>
@@ -63,7 +63,7 @@
 
         <li class="gallery__item">
           <div class="gallery__image">
-            <img class="gallery__picture" src="#" alt="road-to-the-north" width="280" height="280">
+            <a class="gallery_big-link" href="#"><img class="gallery__picture" src="#" alt="road-to-the-north" width="280" height="280"></a>
           </div>
           <p class="gallery__description">дорога на север</p>
           <p class="gallery__author">Автор фото: Пётр</p>
@@ -73,7 +73,7 @@
 
         <li class="gallery__item">
           <div class="gallery__image">
-            <img class="gallery__picture" src="#" alt="sedona-bridge" width="280" height="280">
+            <a class="gallery_big-link" href="#"><img class="gallery__picture" src="#" alt="sedona-bridge" width="280" height="280"></a>
           </div>
           <p class="gallery__description">мост дьявола</p>
           <p class="gallery__author">Автор фото: Антон</p>
@@ -88,37 +88,38 @@
         </section>
 
         <section class="video-box">
+          <img class="video-box__preview" src="#" alt="video-preview" width="320" height="200">
           <div class="video-box__duration-line"><span class="visually-hidden">управление перемоткой</span></div>
           <div class="video-box__controls"><span class="visually-hidden">органы управления видеоплеером</span>
-            <div class="video-box__rewind"><span class="visually-hidden">начать просмотр сначала</span></div>
-            <div class="video-box__subtitles"><span class="visually-hidden">субтитры</span></div>
-            <div class="video-box__full-screen"><span class="visually-hidden">полноэкранный режим</span></div>
+            <button class="video-box__rewind"><span class="visually-hidden">начать просмотр сначала</span></button>
+            <button class="video-box__subtitles"><span class="visually-hidden">субтитры</span></button>
+            <button class="video-box__full-screen"><span class="visually-hidden">полноэкранный режим</span></button>
           </div>
 
         </section>
 
       </main>
 
-      <footer class="site-footer">
+        <footer class="site-footer">
             <p class="site-footer__hashtag">#visitsedona</p>
 
             <section class="social">
               <ul class="social__list">
                 <li class="social__item">
-                  <a href="#"><span class="visually-hidden">Twitter</span><img class="social__icon social__icon--twitter" src="#" alt="twitter" width="20" height="20"></a>
+                  <a href="#"><span class="visually-hidden">Twitter</span></a>
                 </li>
                 <li class="social__item">
-                  <a href="#"><span class="visually-hidden">Twitter</span><img class="social__icon social__icon--facebook" src="#" alt="facebook" width="20" height="20"></a>
+                  <a href="#"><span class="visually-hidden">Twitter</span></a>
                 </li>
                 <li class="social__item">
-                  <a href="#"><span class="visually-hidden">Twitter</span><img class="social__icon social__icon--youtube" src="#" alt="youtube" width="20" height="20"></a>
+                  <a href="#"><span class="visually-hidden">Twitter</span></a>
                 </li>
               </ul>
             </section>
 
             <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="blank">разработано <img class="copyright__icon" src="#" alt="html-academy-logo" width="20" height="20">
             </a>
-      </footer>
+        </footer>
 
       </body>
     </html>
