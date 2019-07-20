@@ -1,0 +1,33 @@
+.reasons-list {
+  list-style: none;
+}
+
+.reasons-list__item {
+  background-color: #eeeeee;
+  &--color {
+    background-color: #81b3d2;
+  }
+}
+
+.reasons-list__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  &--color {
+    color: #ffffff;
+  }
+}
+
+.reasons-list__number {
+  line-height: 21px;
+  &--color {
+    color: #ffffff;
+  }
+}
+
+.reasons-list__text {
+  line-height: 21px;
+  &--color {
+    color: #ffffff;
+  }
+}
