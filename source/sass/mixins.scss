@@ -7,7 +7,7 @@
 }
 
 @mixin blue-button {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -15,5 +15,4 @@
   background-color: #81b3d2;
   text-decoration: none;
   text-transform: uppercase;
-
 }
