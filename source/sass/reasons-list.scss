@@ -1,6 +1,6 @@
 .reasons-list {
   list-style: none;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .reasons-list__item {
@@ -46,18 +46,16 @@
   .reasons-list__item {
     width: 33%;
 
-  &--color {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    &--color {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
-}
 
-.reasond-list__content {
-
-  &--order {
-    order: 2;
+  .reasond-list__content {
+    &--order {
+      order: 2;
+    }
   }
-}
-
 }
