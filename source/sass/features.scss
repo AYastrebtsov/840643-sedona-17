@@ -1,6 +1,7 @@
 .features {
   background-color: #ffffff;
   list-style: none;
+  padding-left: 0px;
 }
 
 .features__header {
@@ -11,4 +12,10 @@
 .features__text {
   line-height: 21px;
   color: #333333;
+}
+
+@media (min-width: 768px) {
+  .features {
+    display: flex;
+  }
 }
