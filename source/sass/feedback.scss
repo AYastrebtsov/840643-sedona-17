@@ -1,0 +1,23 @@
+.feedback__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.feedback__label {
+  line-height: 26px;
+  color: #333333;
+}
+
+.feedback__area {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.feedback__input--bold,
+.feedback__label--bold {
+  @include form-settings;
+}
+
+.feedback__button {
+  @include blue-button;
+}

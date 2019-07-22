@@ -1,0 +1,16 @@
+.site-footer {
+  text-align: center;
+}
+
+.site-footer__hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .site-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
