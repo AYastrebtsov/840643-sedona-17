@@ -21,3 +21,16 @@
 .feedback__button {
   @include blue-button;
 }
+
+.feedback__input::-webkit-input-placeholder {
+  color: #000000;
+}
+.feedback__input::-moz-placeholder {
+  color: #000000;
+}
+.feedback__input:-moz-placeholder {
+  color: #000000;
+}
+.feedback__input:-ms-input-placeholder {
+  color: #000000;
+}
