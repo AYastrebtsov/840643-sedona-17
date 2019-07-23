@@ -8,6 +8,7 @@
     </head>
     <body>
 
+      <div class="site-wrapper">
       <header class="site-header">
 
         <nav class="site-navigation">
@@ -43,7 +44,7 @@
         <section class="feedback">
           <form class="feedback__form" action="https://echo.htmlacademy.ru" method="get">
 
-            <fieldset class="feedback__group">
+            <fieldset class="feedback__group feedback__group--order2">
             <h3 class="feedback__header">представьтесь:</h3>
 
             <label class="feedback__label feedback__label--name" for="name">имя*:</label>
@@ -56,7 +57,7 @@
             <input class="feedback__input feedback__input--bold feedback__input--last-name" id="patronymic" type="text" placeholder="Александрович">
           </fieldset>
 
-          <fieldset class="feedback__group">
+          <fieldset class="feedback__group feedback__group--order3">
             <h3 class="feedback__header">контактная информация:</h3>
 
             <label class="feedback__label feedback__label--phone" for="phone">контактный телефон*:</label>
@@ -66,8 +67,7 @@
             <input class="feedback__input feedback__input--bold feedback__label--phone" id="email" type="email" placeholder="Введите e-mail" required>
           </fieldset>
 
-            <!-- иконки трубки и телефона планирую сделать псевдоэлементами, по-этому в разметке их нету -->
-          <fieldset class="feedback__group">
+          <fieldset class="feedback__group feedback__group--order1">
             <h3 class="feedback__header">ваше общее впечатление</h3>
 
             <input class="feedback__input feedback__input--radio" name="feedback-radio" value="positive" id="positive" type="radio" checked >
@@ -103,7 +103,7 @@
             <textarea class="feedback__area feedback__label--bold" required>Опишите подробно все свои восторги</textarea>
           </fieldset>
 
-            <button class="feedback__button" type="submit">отправить отзыв</button>
+            <button class="feedback__button feedback__button--order" type="submit">отправить отзыв</button>
 
           </form>
         </section>
@@ -130,6 +130,7 @@
             <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="blank">разработано <img class="copyright__icon" src="#" alt="html-academy-logo" width="20" height="20">
             </a>
         </footer>
+      </div>
 
     </body>
 

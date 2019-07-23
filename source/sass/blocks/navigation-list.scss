@@ -16,11 +16,11 @@
 }
 
 .navigation__link {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #ffffff;
-    text-decoration: none;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -36,7 +36,6 @@
   }
 
   .navigation__link {
-      color: #000000;
-    }
+    color: #000000;
   }
 }

@@ -25,12 +25,45 @@
 .feedback__input::-webkit-input-placeholder {
   color: #000000;
 }
+
 .feedback__input::-moz-placeholder {
   color: #000000;
 }
-.feedback__input:-moz-placeholder {
+
+.feedback__input::-ms-input-placeholder {
   color: #000000;
 }
-.feedback__input:-ms-input-placeholder {
-  color: #000000;
+
+@media (min-width: 768px) {
+  .feedback__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feedback__group {
+    order: 4;
+    width: 100%;
+
+    &--order1 {
+      order: 1;
+      width: 49%;
+    }
+
+    &--order2 {
+      order: 2;
+      width: 49%;
+    }
+
+    &--order3 {
+      order: 3;
+      width: 100%;
+    }
+  }
+
+  .feedback__button {
+
+    &--order {
+      order: 5;
+    }
+  }
 }
