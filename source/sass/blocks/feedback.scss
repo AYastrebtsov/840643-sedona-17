@@ -1,0 +1,110 @@
+.feedback__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.feedback__label {
+  line-height: 26px;
+  color: #333333;
+}
+
+.feedback__area {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.feedback__input--bold,
+.feedback__label--bold {
+  @include form-settings;
+}
+
+.feedback__button {
+  @include blue-button;
+}
+
+.feedback__input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.feedback__input::-moz-placeholder {
+  color: #000000;
+}
+
+.feedback__input::-ms-input-placeholder {
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .feedback__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feedback__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feedback__header {
+    width: 100%;
+  }
+
+  .feedback__wrapper--column {
+    flex-direction: column;
+  }
+
+  .feedback__group {
+    order: 4;
+    width: 100%;
+    display: flex;
+
+    &--order1 {
+      order: 1;
+      width: 49%;
+    }
+
+    &--order2 {
+      order: 2;
+      width: 49%;
+    }
+
+    &--order3 {
+      order: 3;
+      width: 100%;
+    }
+  }
+
+  .feedback__button {
+    &--order {
+      order: 5;
+    }
+  }
+
+  .feedback__label--name,
+  .feedback__label--last-name {
+    width: 20%;
+  }
+
+  .feedback__input--name,
+  .feedback__input--last-name {
+    width: 80%;
+  }
+
+  .feedback__label--phone {
+    width: 100%;
+  }
+
+  .feedback__siteseeing {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feedback__siteseeing {
+    width: 25%;
+  }
+
+  .feedback__label--phone {
+    width: 15%;
+  }
+}

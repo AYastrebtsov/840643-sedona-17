@@ -13,14 +13,14 @@
   font-weight: bold;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
+}
 
-  a {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #ffffff;
-    text-decoration: none;
-  }
+.navigation__link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -33,9 +33,9 @@
     background-color: #ffffff;
     border: 0;
     color: #000000;
+  }
 
-    & a {
-      color: #000000;
-    }
+  .navigation__link {
+    color: #000000;
   }
 }
