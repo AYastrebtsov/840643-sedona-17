@@ -1,3 +1,38 @@
+.modal-hotel {
+  margin-bottom: 65px;
+}
+
 .modal-hotel__opener {
   @include blue-button;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 46px;
+  padding-right: 48px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &[disabeled] {
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-hotel {
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-hotel {
+    margin-bottom: 67px;
+  }
 }
