@@ -1,7 +1,61 @@
 .introduction {
+  position: relative;
   background-color: #324e63;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 389px;
+  background-position-x: 50%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 27px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    bottom: -1px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.introduction__text {
+  padding-top: 90px;
+}
+
+.introduction__text-image {
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .introduction {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    &::after {
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+      height: 57px;
+    }
+  }
+
+  .introduction__text {
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+
+  .introduction__text-image {
+    width: 461px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .introduction {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    &::after {
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+      height: 57px;
+    }
+  }
 }

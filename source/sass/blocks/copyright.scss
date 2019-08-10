@@ -3,4 +3,25 @@
   text-decoration: none;
   line-height: 26px;
   color: #000000;
+  max-width: 135px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+
+  &:hover path,
+  &:focus path {
+    fill: #81b3d2;
+  }
+
+  &:active path {
+    fill: #b2b2b2;
+  }
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    margin: initial;
+    position: relative;
+    bottom: 21px;
+    left: 2px;
+  }
 }
