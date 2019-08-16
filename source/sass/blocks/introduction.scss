@@ -17,10 +17,21 @@
     background-size: cover;
     background-position: center;
   }
+
+  &--form {
+    min-height: 156px;
+    background-position-y: 99%;
+    background-size: auto;
+    padding: 0;
+  }
 }
 
 .introduction__text {
   padding-top: 90px;
+
+  &--form {
+    padding-top: 52px;
+  }
 }
 
 .introduction__text-image {
@@ -31,6 +42,7 @@
 @media (min-width: 768px) {
   .introduction {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
 
     &::after {
       background-image: url("../img/bg-intro-triangle-tablet.svg");
@@ -41,11 +53,21 @@
   .introduction__text {
     padding-top: 77px;
     padding-bottom: 91px;
+
+    &--form {
+      padding-top: 0;
+      padding-bottom: 20px;
+    }
   }
 
   .introduction__text-image {
     width: 461px;
     height: 350px;
+
+    &--form {
+      width: 455px;
+      height: 268px;
+    }
   }
 }
 

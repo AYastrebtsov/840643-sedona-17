@@ -1,5 +1,8 @@
 .slogan {
   text-align: center;
+}
+
+.slogan--index {
   position: relative;
 
   &::after {
@@ -32,6 +35,12 @@
   margin-top: 17px;
   max-width: 300px;
   padding-bottom: 10px;
+
+  &--form {
+    margin-top: 16px;
+    line-height: 24px;
+    padding-bottom: 17px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -40,11 +49,20 @@
     line-height: 26px;
     max-width: 440px;
     margin-top: 50px;
+
+    &--form {
+      font-size: 30px;
+      margin-top: 76px;
+    }
   }
 
   .slogan__reasons {
     max-width: 490px;
     margin-top: 18px;
+
+    &--form {
+      margin-top: 21px;
+    }
   }
 }
 
