@@ -42,15 +42,15 @@
 
       <main>
 
-      <section class="introduction">
-        <div class="introduction__text">
-          <img class="introduction__text-image" src="#" alt="Sedona" width="228" height="39">
+      <section class="introduction introduction--form">
+        <div class="introduction__text introduction__text--form">
+          <img class="introduction__text-image introduction__text-image--form" src="/img/text-sedona.svg" alt="Sedona" width="229" height="39">
         </div>
       </section>
 
         <section class="slogan">
-          <h2 class="slogan__header">оставьте свой отзыв</h2>
-          <p class="slogan__reasons">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещённых вами достопримечаельностях</p>
+          <h2 class="slogan__header slogan__header--form">оставьте свой отзыв</h2>
+          <p class="slogan__reasons slogan__reasons--form">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещённых вами достопримечаельностях</p>
         </section>
 
         <section class="feedback">
@@ -58,7 +58,7 @@
 
             <fieldset class="feedback__group feedback__group--order2">
               <div class="feedback__wrapper">
-                <h3 class="feedback__header">представьтесь:</h3>
+                <h3 class="feedback__header feedback__header--introduce">представьтесь:</h3>
 
                 <label class="feedback__label feedback__label--name" for="name">имя*:</label>
                 <input class="feedback__input feedback__input--bold feedback__input--name" id="name" type="text" placeholder="Пётр" required>
@@ -66,26 +66,26 @@
                 <label class="feedback__label feedback__label--last-name" for="last-name">фамилия*:</label>
                 <input class="feedback__input feedback__input--bold feedback__input--last-name" id="last-name" type="text" placeholder="Иванов" required>
 
-                <label class="feedback__label feedback__label--last-name" for="patronymic">отчество</label>
+                <label class="feedback__label feedback__label--last-name" for="patronymic">отчество:</label>
                 <input class="feedback__input feedback__input--bold feedback__input--last-name" id="patronymic" type="text" placeholder="Александрович">
             </div>
           </fieldset>
 
           <fieldset class="feedback__group feedback__group--order3">
             <div class="feedback__wrapper">
-              <h3 class="feedback__header">контактная информация:</h3>
+              <h3 class="feedback__header feedback__header--contact">контактная информация:</h3>
 
-              <label class="feedback__label feedback__label--phone" for="phone">контактный телефон*:</label>
+              <label class="feedback__label feedback__label--phone feedback__label--first" for="phone">контактный телефон*:</label>
               <input class="feedback__input feedback__input--bold feedback__input--phone" id="phone" type="tel" placeholder="Введите телефон">
 
-              <label class="feedback__label feedback__label--phone" for="email">Введите e-mail</label>
-              <input class="feedback__input feedback__input--bold feedback__label--phone" id="email" type="email" placeholder="Введите e-mail" required>
+              <label class="feedback__label feedback__label--phone feedback__label--second" for="email">Электронная почта</label>
+              <input class="feedback__input feedback__input--bold feedback__input--phone feedback__label--second" id="email" type="email" placeholder="Введите e-mail" required>
             </div>
           </fieldset>
 
           <fieldset class="feedback__group feedback__group--order1">
             <div class="feedback__wrapper feedback__wrapper--column">
-              <h3 class="feedback__header">ваше общее впечатление</h3>
+              <h3 class="feedback__header feedback__header--impression">ваше общее впечатление:</h3>
 
               <input class="feedback__input feedback__input--radio" name="feedback-radio" value="positive" id="positive" type="radio" checked >
               <label class="feedback__label feedback__label--bold feedback__label--radio" for="positive">Скорее положительное</label>
@@ -98,14 +98,14 @@
           </div>
           </fieldset>
 
-          <fieldset class="feedback__group">
-            <div class="feedback__wrapper">
-              <h3 class="feedback__header">Посещённые достопримечательности:</h3>
+          <fieldset class="feedback__group feedback__group--sights">
+            <div class="feedback__wrapper feedback__wrapper--center">
+              <h3 class="feedback__header feedback__header--sights">Посещённые<br> достопримечательности:</h3>
               <div class="feedback__siteseeing">
                 <input class="feedback__input feedback__input--checkbox" id="option1" type="checkbox" checked>
                 <label class="feedback__label feedback__label--bold feedback__label--checkbox" for="option1">Мост Дьявола</label>
               </div>
-              <div class="feedback__siteseeing">
+              <div class="feedback__siteseeing feedback__siteseeing--position">
                 <input class="feedback__input feedback__input--checkbox" id="option2" type="checkbox" checked>
                 <label class="feedback__label feedback__label--bold feedback__label--checkbox" for="option2">Гора-Колокол</label>
               </div>
@@ -113,20 +113,20 @@
                 <input class="feedback__input feedback__input--checkbox" id="option3" type="checkbox" checked>
                 <label class="feedback__label feedback__label--bold feedback__label--checkbox" for="option3">Слайд-парк</label>
               </div>
-              <div class="feedback__siteseeing">
+              <div class="feedback__siteseeing feedback__siteseeing--position">
                 <input class="feedback__input feedback__input--checkbox" id="option4" type="checkbox">
-                <label class="feedback__label feedback__label--bold feedback__label--checkbox" for="option4">Красные скалы</label>
+                <label class="feedback__label feedback__label--bold feedback__label--checkbox feedback__label--margin" for="option4">Красные скалы</label>
               </div>
           </div>
           </fieldset>
 
-          <fieldset class="feedback__group">
-            <h3 class="feedback__header">Опишите свои эмоции</h3>
+          <fieldset class="feedback__group feedback__group--emotions">
+            <h3 class="feedback__header feedback__header--emotions">Опишите свои эмоции</h3>
 
             <textarea class="feedback__area feedback__label--bold" placeholder="Опишите подробно все свои восторги" required></textarea>
           </fieldset>
 
-            <button class="feedback__button feedback__button--order" type="submit">отправить отзыв</button>
+          <button class="feedback__button feedback__button--order" type="submit">отправить отзыв</button>
 
           </form>
         </section>
@@ -137,7 +137,7 @@
         <p class="site-footer__hashtag">#visitsedona</p>
 
         <section class="social">
-          <ul class="social__list">
+          <ul class="social__list socil__list--form">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Twitter</span><svg class="social__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                 <g id="W6EeEF_1_">
