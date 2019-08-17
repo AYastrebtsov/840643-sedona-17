@@ -68,6 +68,12 @@
 
 @media (min-width: 1200px) {
   .slogan__reasons {
-    text-align: left;
+    text-align: center;
+  }
+
+  .slogan__header {
+    &--form {
+      margin-top: 114px;
+    }
   }
 }
