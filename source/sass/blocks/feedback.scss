@@ -129,6 +129,7 @@
 
 .feedback__input--last-name {
   max-width: 193px;
+  outline: none;
 
   &:nth-of-type(3) {
     margin-left: 13px;
@@ -172,13 +173,6 @@
   &:checked + .feedback__label--radio::before {
     content: "•";
   }
-
-  // &:checked + .feedback__label--checkbox::before {
-  //   background-image: url("/img/icon-tick.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   background-position-x: 17px;
-  // }
 
   &:checked + .feedback__label--checkbox::after {
     background-image: url("/img/icon-tick.svg");
