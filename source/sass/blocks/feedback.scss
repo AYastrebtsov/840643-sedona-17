@@ -219,11 +219,11 @@
   }
 
   &:hover::before {
-    background-color:#e5e5e5;
+    background-color: #e5e5e5;
   }
 
   &:active::before {
-    background-color:#d5d5d5;
+    background-color: #d5d5d5;
     color: #a4a4a4;
   }
 
@@ -266,11 +266,11 @@
   }
 
   &:hover::before {
-    background-color:#e5e5e5;
+    background-color: #e5e5e5;
   }
 
   &:active::before {
-    background:rgba(213, 213, 213, 1);
+    background: rgba(213, 213, 213, 1);
   }
 
   &:active::after {
@@ -319,7 +319,7 @@
   }
 
   &--succes {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -613,7 +613,7 @@
 @media (min-width: 1200px) {
   .feedback__siteseeing {
     width: 25%;
-    margin-left: 0px;
+    margin-left: 0;
 
     &:nth-last-of-type(1) {
       padding-left: 35px;
@@ -635,14 +635,14 @@
 
     &--center {
       max-width: 960px;
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
   .feedback__label--phone {
     width: 80px;
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 21px;
     margin-right: 1px;
   }
@@ -680,7 +680,7 @@
     }
 
     &--contact {
-      padding-left: 0px;
+      padding-left: 0;
       text-align: center;
       margin-bottom: 70px;
     }
@@ -697,7 +697,7 @@
 
     &--sights {
       text-align: center;
-      padding-left: 0px;
+      padding-left: 0;
       margin-top: 21px;
       margin-bottom: 56px;
     }
@@ -715,7 +715,7 @@
     }
 
     &--emotions {
-      padding-left: 0px;
+      padding-left: 0;
       text-align: center;
     }
 
@@ -772,7 +772,7 @@
 
     &--checkbox {
       padding-left: 80px;
-      margin-left: 0px;
+      margin-left: 0;
       width: 240px;
     }
   }
@@ -795,14 +795,14 @@
 
     &--phone {
       width: 323px;
-      margin-left: 0px;
+      margin-left: 0;
       margin-right: 75px;
     }
 
     &--phone:nth-of-type(2) {
       width: 320px;
-      margin-right: 0px;
-      padding-right: 0px;
+      margin-right: 0;
+      padding-right: 0;
     }
   }
 
@@ -811,12 +811,12 @@
   }
 
   .feedback__area {
-    margin-left: 0px;
+    margin-left: 0;
     width: 960px;
   }
 
   .feedback__button {
-    margin-left: 0px;
+    margin-left: 0;
     width: 480px;
     padding-left: 47px;
     margin-bottom: 101px;
@@ -826,15 +826,15 @@
     }
 
     &--failure {
+      margin: 0 auto;
       margin-bottom: 0;
       width: 272px;
-      margin: 0 auto;
     }
 
     &--succes {
       width: 458px;
       margin: 0 auto;
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 }
