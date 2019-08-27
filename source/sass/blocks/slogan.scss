@@ -26,6 +26,21 @@
   margin-top: 40px;
   max-width: 270px;
   padding-bottom: 10px;
+
+  &--failure {
+    padding-top: 65px;
+    font-size: 21px;
+    line-height: 26px;
+    padding-bottom: 0px;
+    padding-bottom: 40px;
+  }
+
+  &--succes {
+    padding-top: 65px;
+    padding-bottom: 40px;
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .slogan__reasons {
@@ -41,6 +56,20 @@
     line-height: 24px;
     padding-bottom: 17px;
   }
+
+  &--failure {
+    width: 280px;
+    margin-bottom: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  &--succes {
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 41px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -54,6 +83,11 @@
       font-size: 30px;
       margin-top: 76px;
     }
+
+    &--failure {
+      padding-top: 65px;
+      padding-bottom: 40px;
+    }
   }
 
   .slogan__reasons {
@@ -62,6 +96,10 @@
 
     &--form {
       margin-top: 21px;
+    }
+
+    &--failure {
+      margin-top: 0;
     }
   }
 }
