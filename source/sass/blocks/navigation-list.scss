@@ -23,7 +23,7 @@
   }
 }
 
-.navigation__link {
+.navigation-list__link {
   display: block;
   color: #ffffff;
   text-decoration: none;
@@ -43,6 +43,7 @@
 @media (min-width: 768px) {
   .navigation-list {
     display: flex;
+    flex-wrap: wrap;
     max-width: 768px;
     margin: 0 auto;
   }
@@ -71,7 +72,7 @@
     }
   }
 
-  .navigation__link {
+  .navigation-list__link {
     color: #000000;
     outline: none;
 
