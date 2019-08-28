@@ -29,6 +29,12 @@
   .modal-hotel {
     margin-bottom: 58px;
   }
+
+  .modal-hotel__opener {
+    display: block;
+    max-width: 457px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1200px) {
