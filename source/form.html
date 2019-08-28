@@ -58,7 +58,7 @@
 
             <fieldset class="feedback__group feedback__group--order2">
               <div class="feedback__wrapper">
-                <h3 class="feedback__header feedback__header--introduce">представьтесь:</h3>
+                <legend class="feedback__header feedback__header--introduce">представьтесь:</legend>
 
                 <label class="feedback__label feedback__label--name" for="name">имя*:</label>
                 <input class="feedback__input feedback__input--bold feedback__input--name" id="name" type="text" placeholder="Пётр" required>
@@ -73,7 +73,7 @@
 
           <fieldset class="feedback__group feedback__group--order3">
             <div class="feedback__wrapper feedback__wrapper--contact">
-              <h3 class="feedback__header feedback__header--contact">контактная информация:</h3>
+              <legend class="feedback__header feedback__header--contact">контактная информация:</legend>
 
               <label class="feedback__label feedback__label--phone feedback__label--first" for="phone"><span class="feedback__hidden">контактный</span> телефон*:</label>
               <input class="feedback__input feedback__input--bold feedback__input--phone" id="phone" type="tel" placeholder="Введите телефон">
@@ -85,7 +85,7 @@
 
           <fieldset class="feedback__group feedback__group--order1">
             <div class="feedback__wrapper feedback__wrapper--column">
-              <h3 class="feedback__header feedback__header--impression">ваше общее впечатление:</h3>
+              <legend class="feedback__header feedback__header--impression">ваше общее впечатление:</legend>
 
               <input class="feedback__input feedback__input--radio" name="feedback-radio" value="positive" id="positive" type="radio" checked >
               <label class="feedback__label feedback__label--bold feedback__label--radio" for="positive">Скорее положительное</label>
@@ -100,7 +100,7 @@
 
           <fieldset class="feedback__group feedback__group--sights">
             <div class="feedback__wrapper feedback__wrapper--center">
-              <h3 class="feedback__header feedback__header--sights">Посещённые<br> достопримечательности:</h3>
+              <legend class="feedback__header feedback__header--sights">Посещённые <span class="feedback__break"></span>достопримечательности:</span></legend>
               <div class="feedback__siteseeing">
                 <input class="feedback__input feedback__input--checkbox" id="option1" type="checkbox" checked>
                 <label class="feedback__label feedback__label--bold feedback__label--checkbox" for="option1">Мост Дьявола</label>
@@ -121,10 +121,13 @@
           </fieldset>
 
           <fieldset class="feedback__group feedback__group--emotions">
-            <h3 class="feedback__header feedback__header--emotions">Опишите свои эмоции:</h3>
+            <div class="feedback__wrapper">
+              <legend class="feedback__header feedback__header--emotions">Опишите свои эмоции:</legend>
 
-            <textarea class="feedback__area feedback__label--bold" placeholder="Опишите подробно все свои восторги" required></textarea>
-          </fieldset>
+              <textarea class="feedback__area feedback__label--bold" placeholder="Опишите подробно все свои восторги" required></textarea>
+              </div>
+            </fieldset>
+
 
           <button class="feedback__button feedback__button--order" type="submit">отправить отзыв</button>
 

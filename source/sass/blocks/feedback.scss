@@ -7,6 +7,7 @@
   line-height: 26px;
   font-weight: bold;
   text-align: center;
+  margin: 18px;
 
   &--impression {
     margin-bottom: 37px;
@@ -364,11 +365,14 @@
     font-size: 21px;
     line-height: 26px;
     margin-bottom: 73px;
+    margin-left: 0;
+    margin-right: 0;
 
     &--introduce {
       margin-bottom: 54px;
       text-align: left;
-      margin-left: 25px;
+      margin-left: 23px;
+      margin-top: 21px;
     }
 
     &--impression {
@@ -382,6 +386,7 @@
     &--contact {
       margin-bottom: 4px;
       position: relative;
+      margin-top: 21px;
 
       &::before {
         content: "";
@@ -407,6 +412,7 @@
     &--sights {
       margin-bottom: 57px;
       position: relative;
+      margin-top: 21px;
 
       &::before {
         content: "";
@@ -454,6 +460,10 @@
       right: 60px;
       top: 12px;
     }
+  }
+
+  .feedback__break {
+    display: block;
   }
 
   .feedback__wrapper--column {
