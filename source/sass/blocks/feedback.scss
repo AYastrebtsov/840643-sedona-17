@@ -177,7 +177,6 @@
 
 .feedback__input--radio,
 .feedback__input--checkbox {
-
   &:checked + .feedback__label--radio::before {
     content: "•";
   }
