@@ -22,22 +22,29 @@
   margin-bottom: 0;
 }
 
+.gallery__info-like {
+  display: flex;
+}
+
 .gallery__author {
   line-height: 24px;
   color: #333333;
   text-transform: none;
   margin-top: 0;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
 }
 
 .gallery__like {
   width: 22px;
-  height: 20px;
-  background-image: url("/img/icon-like.svg");
+  height: 23px;
   background-color: #ffffff;
   border: 0;
   background-repeat: no-repeat;
-  margin-right: 11px;
+  margin-right: 14px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  background-image: url("/img/icon-like.svg");
 }
 
 .gallery__picture {
@@ -48,29 +55,106 @@
 .gallery__counter {
   line-height: 24px;
   font-weight: bold;
+  margin-top: 2px;
 }
 
 @media (min-width: 768px) {
   .gallery {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .gallery__item {
     width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+    padding-top: 0;
 
     &--king-size {
       width: 100%;
+      min-height: 490px;
+      padding-top: 22px;
     }
+  }
+
+  .gallery__image {
+    margin-bottom: 0;
+
+    &--king-size {
+      height: 400px;
+    }
+  }
+
+  .gallery__picture {
+    height: 100%;
+  }
+
+  .gallery__info-wrapper {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 11px;
+  }
+
+  .gallery__description {
+    margin-top: 15px;
+  }
+
+  .gallery__info-like {
+    margin-top: 26px;
+    min-width: 65px;
+  }
+
+  .gallery__like {
+    margin-right: 10px;
+    padding-top: 2px;
+    opacity: 0.3;
+    margin-top: 2px;
+    background-color: transparent;
   }
 }
 
 @media (min-width: 1200px) {
+  .gallery {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .gallery__item {
     width: 33.33%;
+    position: relative;
 
     &--king-size {
       width: 100%;
+      min-height: 424px;
+      padding-top: 24px;
     }
+  }
+
+  .gallery__info-wrapper {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    bottom: 0;
+  }
+
+  .gallery__description,
+  .gallery__author {
+    color: #ffffff;
+  }
+
+  .gallery__like {
+    opacity: unset;
+    filter: invert(1);
+  }
+
+  .gallery__counter {
+    color: #ffffff;
   }
 }

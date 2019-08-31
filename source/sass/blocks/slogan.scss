@@ -114,6 +114,22 @@
       padding-top: 65px;
       padding-bottom: 40px;
     }
+
+    &--photo {
+      margin-top: 76px;
+      font-size: 30px;
+    }
+
+    &--doubt {
+      font-size: 30px;
+      margin-top: 66px;
+      padding-bottom: 13px;
+    }
+  }
+
+  .slogan--photo {
+    border-bottom: none;
+    padding-bottom: 37px;
   }
 
   .slogan__reasons {
@@ -129,17 +145,41 @@
     &--failure {
       margin-top: 0;
     }
+
+    &--photo {
+      margin-top: 22px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    &--doubt {
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-bottom: 61px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
   .slogan__reasons {
     text-align: center;
+
+    &--doubt {
+      margin-bottom: 59px;
+    }
   }
 
   .slogan__header {
     &--form {
       margin-top: 114px;
+    }
+
+    &--photo {
+      margin-top: 114px;
+    }
+
+    &--doubt {
+      margin-top: 70px;
     }
   }
 }
