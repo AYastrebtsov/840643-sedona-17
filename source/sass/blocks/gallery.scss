@@ -1,20 +1,48 @@
 .gallery {
   padding-left: 0;
+  margin-top: 0;
 }
 
 .gallery__item {
   list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.gallery__image {
+  margin-bottom: 15px;
 }
 
 .gallery__description {
   line-height: 24px;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .gallery__author {
   line-height: 24px;
   color: #333333;
   text-transform: none;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.gallery__like {
+  width: 22px;
+  height: 20px;
+  background-image: url("/img/icon-like.svg");
+  background-color: #ffffff;
+  border: 0;
+  background-repeat: no-repeat;
+  margin-right: 11px;
+}
+
+.gallery__picture {
+  width: 100%;
+  display: block;
 }
 
 .gallery__counter {
