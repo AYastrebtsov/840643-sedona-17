@@ -13,14 +13,15 @@
 
         <nav class="site-navigation">
           <ul class="navigation-list">
-            <li class="navigation-list__item"><a class="navigation-list__link" href="index.html">главная</a></li>
+            <li class="navigation-list__item"><a class="navigation-list__link" href="index.html">главная</a>
+              <button class="site-header__closer site-header__closer--js-active"><span class="visually-hidden">закрыть меню</span></button></li>
             <li class="navigation-list__item"><a class="navigation-list__link" href="photo.html">фото и видео</a></li>
             <li class="navigation-list__item"><a class="navigation-list__link">форма отзыва</a></li>
             <li class="navigation-list__item"><a class="navigation-list__link" href="https://htmlacademy.ru">html academy</a></li>
           </ul>
         </nav>
 
-        <button class="site-header__burger"><span class="visually-hidden">меню</span>
+        <button class="site-header__burger site-header__burger--js-active"><span class="visually-hidden">меню</span>
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve" >
           <g fill="#81b3d2">
             <rect width="22.928" height="3.964"/>
@@ -58,7 +59,7 @@
 
             <fieldset class="feedback__group feedback__group--order2">
               <div class="feedback__wrapper">
-                <legend class="feedback__header feedback__header--introduce">представьтесь:</legend>
+                <h3 class="feedback__header feedback__header--introduce">представьтесь:</h3>
 
                 <label class="feedback__label feedback__label--name" for="name">имя*:</label>
                 <input class="feedback__input feedback__input--bold feedback__input--name" id="name" type="text" placeholder="Пётр" required>
@@ -73,7 +74,7 @@
 
           <fieldset class="feedback__group feedback__group--order3">
             <div class="feedback__wrapper feedback__wrapper--contact">
-              <legend class="feedback__header feedback__header--contact">контактная информация:</legend>
+              <h3 class="feedback__header feedback__header--contact">контактная информация:</h3>
 
               <label class="feedback__label feedback__label--phone feedback__label--first" for="phone"><span class="feedback__hidden">контактный</span> телефон*:</label>
               <input class="feedback__input feedback__input--bold feedback__input--phone" id="phone" type="tel" placeholder="Введите телефон">
@@ -85,7 +86,7 @@
 
           <fieldset class="feedback__group feedback__group--order1">
             <div class="feedback__wrapper feedback__wrapper--column">
-              <legend class="feedback__header feedback__header--impression">ваше общее впечатление:</legend>
+              <h3 class="feedback__header feedback__header--impression">ваше общее впечатление:</h3>
 
               <input class="feedback__input feedback__input--radio visually-hidden" name="feedback-radio" value="positive" id="positive" type="radio" checked >
               <label class="feedback__label feedback__label--bold feedback__label--radio" for="positive">Скорее положительное</label>
@@ -100,7 +101,7 @@
 
           <fieldset class="feedback__group feedback__group--sights">
             <div class="feedback__wrapper feedback__wrapper--center">
-              <legend class="feedback__header feedback__header--sights">Посещённые <span class="feedback__break"></span>достопримечательности:</span></legend>
+              <h3 class="feedback__header feedback__header--sights">Посещённые <span class="feedback__break">достопримечательности:</span></h3>
               <div class="feedback__siteseeing">
                 <input class="feedback__input feedback__input--checkbox visually-hidden" id="option1" type="checkbox" checked>
                 <label class="feedback__label feedback__label--bold feedback__label--checkbox" for="option1">Мост Дьявола</label>
@@ -122,7 +123,7 @@
 
           <fieldset class="feedback__group feedback__group--emotions">
             <div class="feedback__wrapper">
-              <legend class="feedback__header feedback__header--emotions">Опишите свои эмоции:</legend>
+              <h3 class="feedback__header feedback__header--emotions">Опишите свои эмоции:</h3>
 
               <textarea class="feedback__area feedback__label--bold" placeholder="Опишите подробно все свои восторги" required></textarea>
               </div>
@@ -188,7 +189,7 @@
 
     </footer>
       </div>
-
+      <script src="js/scripts.js"></script>
     </body>
 
     </html>
