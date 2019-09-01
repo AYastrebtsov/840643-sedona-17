@@ -1,3 +1,7 @@
+.site-header {
+  padding-top: 0.1px;
+}
+
 .site-header__burger {
   display: block;
   width: 23px;
@@ -22,6 +26,20 @@
   background-repeat: no-repeat;
   background-color: inherit;
   border: 0;
+}
+
+@media (max-width: 768px) {
+  .site-header__burger {
+    &--js-active {
+      display: none;
+    }
+  }
+
+  .site-header__closer {
+    &--js-active {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: 768px) {

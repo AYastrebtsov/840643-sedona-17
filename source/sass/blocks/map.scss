@@ -6,6 +6,11 @@
   background-size: cover;
 }
 
+.map__widget {
+  width: 100%;
+  border: none;
+}
+
 @media (min-width: 321px) {
   .map {
     background-image: url("/img/bg-map-tablet@1x.jpg");
