@@ -89,7 +89,7 @@
     width: 19px;
     height: 18px;
     right: 38px;
-    background-image: url("/img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     top: 53px;
     background-repeat: no-repeat;
   }
@@ -112,7 +112,7 @@
     width: 16px;
     height: 14px;
     right: 41px;
-    background-image: url("/img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
     top: 54px;
     background-repeat: no-repeat;
   }
@@ -182,7 +182,7 @@
   }
 
   &:checked + .feedback__label--checkbox::after {
-    background-image: url("/img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-position-x: 17px;
