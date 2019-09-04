@@ -55,7 +55,7 @@ gulp.task("js", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -66,4 +66,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "html", "fonts_woff", "fonts_woff2", "svg", "img", "js", "server"));
+gulp.task("start", gulp.series("server"));
+gulp.task("build", gulp.series("css", "html", "fonts_woff", "fonts_woff2", "svg", "img", "js"));
