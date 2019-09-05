@@ -34,17 +34,9 @@
   margin-bottom: 6px;
 }
 
-.gallery__like {
-  width: 22px;
-  height: 23px;
-  background-color: #ffffff;
-  border: 0;
-  background-repeat: no-repeat;
+.gallery__info-icon {
   margin-right: 14px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-top: 0;
-  background-image: url("../img/icon-like.svg");
+  margin-top: 1px;
 }
 
 .gallery__picture {
@@ -108,7 +100,7 @@
 
   .gallery__info-like {
     margin-top: 26px;
-    min-width: 65px;
+    min-width: 64px;
   }
 
   .gallery__like {
@@ -117,6 +109,15 @@
     opacity: 0.3;
     margin-top: 2px;
     background-color: transparent;
+  }
+
+  .gallery__info-icon {
+    margin-right: 10px;
+    margin-top: 2px;
+  }
+
+  .gallery__info-icon path {
+    fill: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -142,6 +143,10 @@
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     bottom: 0;
+  }
+
+  .gallery__info-icon path {
+    fill: rgba(255, 255, 255, 1);
   }
 
   .gallery__description,

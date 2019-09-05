@@ -19,22 +19,22 @@
   margin-left: 20px;
   margin-right: 20px;
   height: 45px;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.6);
   position: relative;
   top: -49px;
-  filter: opacity(0.6);
 }
 
 .video-box__duration-input {
   appearance: none;
   width: 100%;
-  background: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
   height: 3px;
   outline: none;
   margin-top: 22px;
   margin-bottom: 20px;
   position: absolute;
   bottom: 67px;
+  padding: 0;
 }
 
 .video-box__duration-input:focus {
@@ -87,7 +87,7 @@
 
 .video-box__duration-input::-ms-track {
   width: 100%;
-  height: 3px;
+  height: 6px;
   cursor: pointer;
   border-color: transparent;
   background: rgba(255, 255, 255, 0.2);
