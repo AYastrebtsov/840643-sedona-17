@@ -10,6 +10,8 @@
   padding-top: 22px;
   padding-bottom: 17px;
   border-bottom: 1px solid #e5e5e5;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .gallery__image {
@@ -40,7 +42,6 @@
 }
 
 .gallery__picture {
-  width: 100%;
   display: block;
 }
 
@@ -56,6 +57,8 @@
     flex-wrap: wrap;
     padding-left: 60px;
     padding-right: 60px;
+    width: 768px;
+    margin: 0 auto;
   }
 
   .gallery__item {
@@ -65,6 +68,7 @@
     border-bottom: none;
     padding-bottom: 0;
     padding-top: 0;
+    margin-left: 0;
 
     &--king-size {
       width: 100%;
@@ -83,6 +87,7 @@
 
   .gallery__picture {
     height: 100%;
+    width: 100%;
   }
 
   .gallery__info-wrapper {
@@ -125,6 +130,7 @@
   .gallery {
     padding-left: 0;
     padding-right: 0;
+    width: 1200px;
   }
 
   .gallery__item {
