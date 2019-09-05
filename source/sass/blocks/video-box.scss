@@ -1,6 +1,8 @@
 .video-box {
   position: relative;
+  margin: 0 auto;
   margin-bottom: 26px;
+  width: 320px;
 }
 
 .video-box__preview {
@@ -153,10 +155,10 @@
 
 @media (min-width: 768px) {
   .video-box {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 0 auto;
     margin-bottom: 76px;
     height: 500px;
+    width: 648px;
   }
 
   .video-box__preview {
@@ -221,6 +223,7 @@
     margin-left: 199px;
     margin-right: 201px;
     margin-bottom: 121px;
+    width: 800px;
   }
 
   .video-box__controls-wrapper {
