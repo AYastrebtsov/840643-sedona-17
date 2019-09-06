@@ -2,7 +2,7 @@
   background-color: #ffffff;
   list-style: none;
   padding-left: 0;
-  margin-bottom: 37px;
+  padding-bottom: 23px;
 }
 
 .features__item {
@@ -74,6 +74,7 @@
     flex-wrap: wrap;
     margin-bottom: 0;
     width: 100%;
+    padding-bottom: 0;
     justify-content: space-evenly;
   }
 
