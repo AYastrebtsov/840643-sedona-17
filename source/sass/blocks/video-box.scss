@@ -13,8 +13,6 @@
 .video-box__duration-wrapper {
   position: relative;
   top: 18px;
-  margin-left: 40px;
-  margin-right: 45px;
 }
 
 .video-box__duration-line {
@@ -27,74 +25,30 @@
 }
 
 .video-box__duration-input {
-  appearance: none;
-  width: 100%;
+  width: 235px;
   background-color: rgba(255, 255, 255, 0.2);
   height: 3px;
-  outline: none;
+  outline: 0;
   margin-top: 22px;
   margin-bottom: 20px;
   position: absolute;
-  bottom: 67px;
+  bottom: 133px;
   padding: 0;
+  left: 42px;
+  top: -112px;
 }
 
-.video-box__duration-input:focus {
-  outline: none;
-}
-
-.video-box__duration-input::-webkit-slider-thumb {
-  appearance: none;
+.video-box__duration-thumb {
+  font-size: 0;
+  position: absolute;
   width: 9px;
   height: 9px;
-  background: #ffffff;
-  cursor: pointer;
+  background-color: #ffffff;
   border-radius: 50%;
-  margin-top: -3px;
-}
-
-.video-box__duration-input::-moz-range-thumb {
-  width: 9px;
-  height: 9px;
-  background: #ffffff;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.video-box__duration-input::-ms-thumb {
-  width: 9px;
-  height: 9px;
-  background: #ffffff;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.video-box__duration-input::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 3px;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.video-box__duration-input:focus::-webkit-slider-runnable-track {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.video-box__duration-input::-moz-range-track {
-  width: 100%;
-  height: 3px;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.video-box__duration-input::-ms-track {
-  width: 100%;
-  height: 6px;
-  cursor: pointer;
-  border-color: transparent;
-  background: rgba(255, 255, 255, 0.2);
-  border-width: 16px 0;
-  color: transparent;
+  top: -3px;
+  left: 36px;
+  border: 0;
+  padding: 0;
 }
 
 .video-box__controls {
@@ -103,7 +57,7 @@
   margin-right: 20px;
   display: flex;
   position: relative;
-  top: -49px;
+  top: -67px;
 }
 
 .video-box__controls-wrapper {
@@ -136,6 +90,7 @@
   background-color: #f2f2f2;
   border: 0;
   outline: none;
+  height: 25px;
 }
 
 .video-box__rewind:hover path,
@@ -172,20 +127,29 @@
   }
 
   .video-box__duration-wrapper {
-    top: -55px;
+    top: -188px;
     margin-left: 91px;
     margin-right: 168px;
   }
 
-  .video-box__controls {
-    top: -177px;
-    margin-left: 11px;
-    margin-right: 18px;
-    background-color: transparent;
+  .video-box__duration-input {
+    top: 21px;
+    width: 389px;
+    left: 2px;
+    bottom: 0;
+    z-index: 1;
   }
 
-  .video-box__duration-input {
-    z-index: 1;
+  .video-box__duration-thumb {
+    left: 113px;
+  }
+
+  .video-box__controls {
+    top: 11px;
+    left: -81px;
+    width: 620px;
+    background-color: transparent;
+    margin: 0;
   }
 
   .video-box__rewind,
@@ -228,5 +192,13 @@
 
   .video-box__controls-wrapper {
     margin-right: 24px;
+  }
+
+  .video-box__controls {
+    width: 772px;
+  }
+
+  .video-box__duration-input {
+    width: 540px;
   }
 }
