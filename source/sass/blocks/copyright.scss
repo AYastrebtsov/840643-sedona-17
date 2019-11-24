@@ -7,13 +7,13 @@
   margin: 0 auto;
   padding-bottom: 30px;
 
-  &:hover path,
-  &:focus path {
-    fill: #81b3d2;
+  &:hover .copyright__logo,
+  &:focus .copyright__logo {
+    color: #81b3d2;
   }
 
-  &:active path {
-    fill: #b2b2b2;
+  &:active .copyright__logo  {
+    color: #b2b2b2;
   }
 }
 
