@@ -72,6 +72,23 @@
   background-color: #f2f2f2;
   border: 0;
   outline: none;
+  width: 20px;
+  height: 20px;
+
+  &:hover svg,
+  &:focus svg {
+    fill: rgba(255, 255, 255, 0.2);
+  }
+
+  svg {
+    fill: rgb(92, 104, 112);
+    width: 20px;
+    height: 20px;
+
+    @media (min-width: 768px) {
+      fill: rgba(255, 255, 255, 1);
+    }
+  }
 }
 
 .video-box__subtitles {
@@ -81,6 +98,23 @@
   background-color: #f2f2f2;
   border: 0;
   outline: none;
+  width: 32px;
+  height: 20px;
+
+  &:hover svg,
+  &:focus svg {
+    fill: rgba(255, 255, 255, 0.2);
+  }
+
+  svg {
+    fill: rgb(92, 104, 112);
+    width: 33px;
+    height: 20px;
+
+    @media (min-width: 768px) {
+      fill: rgba(255, 255, 255, 1);
+    }
+  }
 }
 
 .video-box__rewind {
@@ -91,21 +125,21 @@
   border: 0;
   outline: none;
   height: 25px;
-}
 
-.video-box__rewind:hover path,
-.video-box__rewind:focus path,
-.video-box__subtitles:hover path,
-.video-box__subtitles:focus path,
-.video-box__full-screen:hover polygon,
-.video-box__full-screen:focus polygon {
-  fill: #333333;
-}
+  &:hover svg,
+  &:focus svg {
+    fill: rgba(255, 255, 255, 0.2);
+  }
 
-.video-box__rewind:active path,
-.video-box__subtitles:active path,
-.video-box__full-screen:active polygon {
-  fill: #b8b8b8;
+  svg {
+    fill: rgb(92, 104, 112);
+    width: 17px;
+    height: 20px;
+
+    @media (min-width: 768px) {
+      fill: rgba(255, 255, 255, 1);
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -158,28 +192,6 @@
     background-color: transparent;
   }
 
-  .video-box__rewind path,
-  .video-box__subtitles path,
-  .video-box__full-screen polygon {
-    fill: #ffffff;
-  }
-
-  .video-box__rewind:hover path,
-  .video-box__rewind:focus path,
-  .video-box__subtitles:hover path,
-  .video-box__subtitles:focus path,
-  .video-box__full-screen:hover polygon,
-  .video-box__full-screen:focus polygon {
-    fill: #ffffff;
-    opacity: 0.6;
-  }
-
-  .video-box__rewind:active path,
-  .video-box__subtitles:active path,
-  .video-box__full-screen:active polygon {
-    fill: #ffffff;
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: 1200px) {
